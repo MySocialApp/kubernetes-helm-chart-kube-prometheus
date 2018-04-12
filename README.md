@@ -1,2 +1,7 @@
-# kubernetes-helm-chart-kube-prometheus
-Kubernetes Helm Chart for Prometheus exporter kube-prometheus
+# kube-prometheus
+
+This is the helm chart equivalent of `contrib/kube-prometheus`.
+
+# Prerequisites
+
+Requires helm >= 2.5.0
