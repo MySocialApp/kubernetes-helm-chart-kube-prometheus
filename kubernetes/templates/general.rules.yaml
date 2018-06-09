@@ -10,14 +10,6 @@ groups:
     annotations:
       description: '{{`{{ $value }}`}}% of {{`{{ $labels.job }}`}} targets are down.'
       summary: Targets are down
-  - alert: DeadMansSwitch
-    expr: vector(1)
-    labels:
-      severity: none
-    annotations:
-      description: This is a DeadMansSwitch meant to ensure that the entire Alerting
-        pipeline is functional.
-      summary: Alerting DeadMansSwitch
   - record: fd_utilization
     expr: process_open_fds / process_max_fds
   - alert: FdExhaustionClose
